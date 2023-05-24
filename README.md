@@ -4,3 +4,4 @@
 ![image](https://github.com/fbreseghello/azure-ml-model-builder/assets/99092931/81c6d5da-0f2f-41f3-ba9f-7dbe70149d36)
 ![image](https://github.com/fbreseghello/azure-ml-model-builder/assets/99092931/4458ea3e-a8a2-4685-bc52-85a6d0cad3e2)
 ![image](https://github.com/fbreseghello/azure-ml-model-builder/assets/99092931/38b1138a-5402-4a5d-9d77-543efc8d167d)
+![image](https://github.com/fbreseghello/azure-ml-model-builder/assets/99092931/23870e82-1d7f-4dae-91da-62ab2674284b)
