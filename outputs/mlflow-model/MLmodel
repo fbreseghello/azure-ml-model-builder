@@ -1,0 +1,27 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.8.16
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 0.22.1
+mlflow_version: 2.2.2
+model_uuid: ede5dae7ea76441f9d8a644c56ad2918
+run_id: AutoML_10130521-b795-4dad-a761-ac7258e79c98_0
+signature:
+  inputs: '[{"name": "day", "type": "long"}, {"name": "mnth", "type": "long"}, {"name":
+    "year", "type": "long"}, {"name": "season", "type": "long"}, {"name": "holiday",
+    "type": "long"}, {"name": "weekday", "type": "long"}, {"name": "workingday", "type":
+    "long"}, {"name": "weathersit", "type": "long"}, {"name": "temp", "type": "double"},
+    {"name": "atemp", "type": "double"}, {"name": "hum", "type": "double"}, {"name":
+    "windspeed", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+utc_time_created: '2023-05-24 18:15:51.982903'
