@@ -6,21 +6,6 @@
 [![Azure ML](https://img.shields.io/badge/Azure_ML-Supported-0078D4.svg)](https://azure.microsoft.com/services/machine-learning/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## Índice
-
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Características](#características)
-- [Arquitetura](#arquitetura)
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Configuração](#configuração)
-- [Uso](#uso)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Modelo Treinado](#modelo-treinado)
-- [Deploy](#deploy)
-- [Contribuindo](#contribuindo)
-- [Licença](#licença)
-
 ## Sobre o Projeto
 
 Este projeto implementa um pipeline completo de AutoML (Automated Machine Learning) usando Azure Machine Learning. Ele automatiza o processo de treinamento, avaliação e deploy de modelos de machine learning, incluindo:
