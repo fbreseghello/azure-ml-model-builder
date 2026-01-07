@@ -1,0 +1,58 @@
+{
+  "workspace": {
+    "subscription_id": "your-subscription-id-here",
+    "resource_group": "your-resource-group",
+    "workspace_name": "your-workspace-name"
+  },
+  "automl_settings": {
+    "task": "regression",
+    "primary_metric": "normalized_root_mean_squared_error",
+    "experiment_timeout_minutes": 30,
+    "iteration_timeout_minutes": 30,
+    "max_concurrent_iterations": 4,
+    "max_cores_per_iteration": -1,
+    "enable_early_stopping": true,
+    "enable_ensembling": true,
+    "enable_stack_ensembling": true,
+    "ensemble_iterations": 15,
+    "n_cross_validations": 5,
+    "validation_size": 0.2,
+    "enable_onnx_compatible_models": false,
+    "model_explainability": true,
+    "enable_code_generation": true,
+    "featurization": "auto",
+    "blocked_transformers": [],
+    "whitelist_models": ["RandomForest", "LightGBM", "XGBoost"],
+    "blacklist_algos": ["TensorFlowDNN", "TensorFlowLinearRegressor"]
+  },
+  "compute": {
+    "compute_target": "cpu-cluster",
+    "vm_size": "STANDARD_DS11_V2",
+    "min_nodes": 0,
+    "max_nodes": 4,
+    "idle_seconds_before_scaledown": 300
+  },
+  "dataset": {
+    "dataset_id": "your-dataset-id-here",
+    "label_column": "target"
+  },
+  "deployment": {
+    "aci": {
+      "cpu_cores": 1,
+      "memory_gb": 1,
+      "auth_enabled": true,
+      "enable_app_insights": true
+    },
+    "aks": {
+      "autoscale_enabled": true,
+      "autoscale_min_replicas": 1,
+      "autoscale_max_replicas": 3,
+      "cpu_cores": 1,
+      "memory_gb": 2
+    }
+  },
+  "logging": {
+    "log_level": "INFO",
+    "enable_telemetry": true
+  }
+}
